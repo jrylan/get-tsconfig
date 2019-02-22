@@ -1,0 +1,278 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`getPartialTsconfig defined cwd 1`] = `
+Object {
+  "config": Object {
+    "compilerOptions": Object {
+      "plugins": Array [
+        Object {
+          "name": "typescript-tslint-plugin",
+        },
+      ],
+      "types": Array [
+        "jest",
+        "node",
+      ],
+    },
+    "exclude": Array [
+      "./__meta__",
+      "./__mocks__",
+    ],
+    "extends": "./node_modules/tsconfig-slick/esnext.json",
+  },
+  "fileName": "<PROJECT_ROOT>/tsconfig.json",
+}
+`;
+
+exports[`getPartialTsconfig infer cwd 1`] = `
+Object {
+  "config": Object {
+    "compilerOptions": Object {
+      "plugins": Array [
+        Object {
+          "name": "typescript-tslint-plugin",
+        },
+      ],
+      "types": Array [
+        "jest",
+        "node",
+      ],
+    },
+    "exclude": Array [
+      "./__meta__",
+      "./__mocks__",
+    ],
+    "extends": "./node_modules/tsconfig-slick/esnext.json",
+  },
+  "fileName": "<PROJECT_ROOT>/tsconfig.json",
+}
+`;
+
+exports[`getTsConfig defined cwd 1`] = `
+Object {
+  "compileOnSave": false,
+  "configFileSpecs": Object {
+    "excludeSpecs": Array [
+      "./__meta__",
+      "./__mocks__",
+    ],
+    "filesSpecs": Array [
+      "index.ts",
+    ],
+    "includeSpecs": undefined,
+    "validatedExcludeSpecs": Array [
+      "./__meta__",
+      "./__mocks__",
+    ],
+    "validatedIncludeSpecs": undefined,
+    "wildcardDirectories": Object {},
+  },
+  "errors": Array [],
+  "fileNames": Array [
+    "<PROJECT_ROOT>/src/index.ts",
+    "<PROJECT_ROOT>/src/__tests__/index.test.ts",
+  ],
+  "options": Object {
+    "allowJs": false,
+    "allowSyntheticDefaultImports": true,
+    "allowUnreachableCode": false,
+    "alwaysStrict": true,
+    "configFilePath": "<PROJECT_ROOT>/tsconfig.json",
+    "declaration": false,
+    "emitDecoratorMetadata": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "forceConsistentCasingInFileNames": true,
+    "importHelpers": false,
+    "inlineSourceMap": false,
+    "isolatedModules": false,
+    "jsx": 1,
+    "lib": Array [
+      "lib.esnext.d.ts",
+    ],
+    "module": 1,
+    "moduleResolution": 2,
+    "noEmit": false,
+    "noEmitHelpers": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noLib": false,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "plugins": Array [
+      Object {
+        "name": "typescript-tslint-plugin",
+      },
+    ],
+    "preserveConstEnums": false,
+    "removeComments": false,
+    "resolveJsonModule": true,
+    "sourceMap": true,
+    "strict": true,
+    "strictFunctionTypes": true,
+    "strictNullChecks": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "target": 6,
+    "types": Array [
+      "jest",
+      "node",
+    ],
+  },
+  "projectReferences": undefined,
+  "raw": Object {
+    "compileOnSave": false,
+    "compilerOptions": Object {
+      "plugins": Array [
+        Object {
+          "name": "typescript-tslint-plugin",
+        },
+      ],
+      "types": Array [
+        "jest",
+        "node",
+      ],
+    },
+    "exclude": Array [
+      "./__meta__",
+      "./__mocks__",
+    ],
+    "extends": "./node_modules/tsconfig-slick/esnext.json",
+    "files": Array [
+      "index.ts",
+    ],
+  },
+  "typeAcquisition": Object {
+    "enable": false,
+    "exclude": Array [],
+    "include": Array [],
+  },
+  "wildcardDirectories": Object {},
+}
+`;
+
+exports[`getTsConfig infer cwd 1`] = `
+Object {
+  "compileOnSave": false,
+  "configFileSpecs": Object {
+    "excludeSpecs": Array [
+      "./__meta__",
+      "./__mocks__",
+    ],
+    "filesSpecs": Array [
+      "index.ts",
+    ],
+    "includeSpecs": undefined,
+    "validatedExcludeSpecs": Array [
+      "./__meta__",
+      "./__mocks__",
+    ],
+    "validatedIncludeSpecs": undefined,
+    "wildcardDirectories": Object {},
+  },
+  "errors": Array [],
+  "fileNames": Array [
+    "<PROJECT_ROOT>/src/index.ts",
+    "<PROJECT_ROOT>/src/__tests__/index.test.ts",
+  ],
+  "options": Object {
+    "allowJs": false,
+    "allowSyntheticDefaultImports": true,
+    "allowUnreachableCode": false,
+    "alwaysStrict": true,
+    "configFilePath": "<PROJECT_ROOT>/tsconfig.json",
+    "declaration": false,
+    "emitDecoratorMetadata": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "forceConsistentCasingInFileNames": true,
+    "importHelpers": false,
+    "inlineSourceMap": false,
+    "isolatedModules": false,
+    "jsx": 1,
+    "lib": Array [
+      "lib.esnext.d.ts",
+    ],
+    "module": 1,
+    "moduleResolution": 2,
+    "noEmit": false,
+    "noEmitHelpers": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noLib": false,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "plugins": Array [
+      Object {
+        "name": "typescript-tslint-plugin",
+      },
+    ],
+    "preserveConstEnums": false,
+    "removeComments": false,
+    "resolveJsonModule": true,
+    "sourceMap": true,
+    "strict": true,
+    "strictFunctionTypes": true,
+    "strictNullChecks": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "target": 6,
+    "types": Array [
+      "jest",
+      "node",
+    ],
+  },
+  "projectReferences": undefined,
+  "raw": Object {
+    "compileOnSave": false,
+    "compilerOptions": Object {
+      "plugins": Array [
+        Object {
+          "name": "typescript-tslint-plugin",
+        },
+      ],
+      "types": Array [
+        "jest",
+        "node",
+      ],
+    },
+    "exclude": Array [
+      "./__meta__",
+      "./__mocks__",
+    ],
+    "extends": "./node_modules/tsconfig-slick/esnext.json",
+    "files": Array [
+      "index.ts",
+    ],
+  },
+  "typeAcquisition": Object {
+    "enable": false,
+    "exclude": Array [],
+    "include": Array [],
+  },
+  "wildcardDirectories": Object {},
+}
+`;
+
+exports[`readTsconfigFile read project config 1`] = `
+Object {
+  "compilerOptions": Object {
+    "plugins": Array [
+      Object {
+        "name": "typescript-tslint-plugin",
+      },
+    ],
+    "types": Array [
+      "jest",
+      "node",
+    ],
+  },
+  "exclude": Array [
+    "./__meta__",
+    "./__mocks__",
+  ],
+  "extends": "./node_modules/tsconfig-slick/esnext.json",
+}
+`;

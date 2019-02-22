@@ -1,0 +1,9 @@
+{
+  "extends": ["tslint-slick/library"],
+  "cliOptions": {
+    "exclude": ["**/__snapshots__/**"]
+  },
+  "rules": {
+    "jsdoc-format": false
+  }
+}

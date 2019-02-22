@@ -1,0 +1,533 @@
+{
+  "metadata": {
+    "toolPackage": "@microsoft/api-extractor",
+    "toolVersion": "7.0.18",
+    "schemaVersion": 1000
+  },
+  "kind": "Package",
+  "canonicalReference": "get-tsconfig",
+  "docComment": "",
+  "name": "get-tsconfig",
+  "members": [
+    {
+      "kind": "EntryPoint",
+      "canonicalReference": "",
+      "name": "",
+      "members": [
+        {
+          "kind": "Function",
+          "canonicalReference": "(findTsconfigFile:0)",
+          "docComment": "/**\n * Find a tsconfig.json file.\n *\n * @param cwd - Starting directory. Defaults to `process.cwd()`.\n *\n * @returns Absolute path of the found tsconfig.json file.\n *\n * @example\n * ```typescript\n * // Infer CWD:\n * const configFile = findTsConfigFile()\n * ```\n *\n * @example\n * ```typescript\n * // Provide CWD:\n * const configFile = findTsConfigFile(YOUR_PROJECT_PATH)\n * ```\n *\n * @public\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function "
+            },
+            {
+              "kind": "Reference",
+              "text": "findTsconfigFile"
+            },
+            {
+              "kind": "Content",
+              "text": "("
+            },
+            {
+              "kind": "Reference",
+              "text": "cwd"
+            },
+            {
+              "kind": "Content",
+              "text": "?: "
+            },
+            {
+              "kind": "Content",
+              "text": "string"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Content",
+              "text": "string"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 7,
+            "endIndex": 8
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 0,
+          "parameters": [
+            {
+              "parameterName": "cwd",
+              "parameterTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 6
+              }
+            }
+          ],
+          "name": "findTsconfigFile"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "(getPartialTsconfig:0)",
+          "docComment": "/**\n * Find a tsconfig.json file, parse it and return the JSON as-is without further value resolution.\n *\n * @param cwd - Current working directory.\n *\n * @returns Partial TypeScript configuration options.\n *\n * @example\n * ```typescript\n * // Infer CWD:\n * const tsconfig = getPartialTsconfig()\n * ```\n *\n * @example\n * ```typescript\n * // Provide CWD:\n * const tsconfig = getPartialTsconfig(YOUR_PROJECT_PATH)\n * ```\n *\n * @public\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function "
+            },
+            {
+              "kind": "Reference",
+              "text": "getPartialTsconfig"
+            },
+            {
+              "kind": "Content",
+              "text": "("
+            },
+            {
+              "kind": "Reference",
+              "text": "cwd"
+            },
+            {
+              "kind": "Content",
+              "text": "?: "
+            },
+            {
+              "kind": "Content",
+              "text": "string"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Reference",
+              "text": "PartialConfig"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 7,
+            "endIndex": 8
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 0,
+          "parameters": [
+            {
+              "parameterName": "cwd",
+              "parameterTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 6
+              }
+            }
+          ],
+          "name": "getPartialTsconfig"
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "(getTsconfig:0)",
+          "docComment": "/**\n * Get tsconfig.json contents.\n *\n * @param cwd - Current working directory.\n *\n * @param formatTsConfig - An optional function to format the contents of the found `tsconfig.json` JSON object before resolving all the options.\n *\n * @returns Fully resolved TypeScript configuration options.\n *\n * @example\n * ```typescript\n * // Infer CWD\n * const tsconfig = getTsconfig()\n * ```\n *\n * @example\n * ```typescript\n * // Provide CWD:\n * const tsconfig = getTsconfig(YOUR_PROJECT_PATH)\n * ```\n *\n * @example\n * ```typescript\n * // Config formatter:\n * const tsconfig = getTsconfig(YOUR_PROJECT_PATH, (config) => {\n *   config.exclude = ['**\\/__tests__/**']\n *   return config\n * })\n * ```\n *\n * @public\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function "
+            },
+            {
+              "kind": "Reference",
+              "text": "getTsconfig"
+            },
+            {
+              "kind": "Content",
+              "text": "("
+            },
+            {
+              "kind": "Reference",
+              "text": "cwd"
+            },
+            {
+              "kind": "Content",
+              "text": "?: "
+            },
+            {
+              "kind": "Content",
+              "text": "string"
+            },
+            {
+              "kind": "Content",
+              "text": ", "
+            },
+            {
+              "kind": "Reference",
+              "text": "formatTsConfig"
+            },
+            {
+              "kind": "Content",
+              "text": "?: "
+            },
+            {
+              "kind": "Content",
+              "text": "("
+            },
+            {
+              "kind": "Reference",
+              "text": "json"
+            },
+            {
+              "kind": "Content",
+              "text": ": any) => any"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Reference",
+              "text": "ResolvedTsconfig"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 13,
+            "endIndex": 14
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 0,
+          "parameters": [
+            {
+              "parameterName": "cwd",
+              "parameterTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 6
+              }
+            },
+            {
+              "parameterName": "formatTsConfig",
+              "parameterTypeTokenRange": {
+                "startIndex": 9,
+                "endIndex": 12
+              }
+            }
+          ],
+          "name": "getTsconfig"
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "(PartialConfig:interface)",
+          "docComment": "/**\n * Partial tsconfig value.\n *\n * @public\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface "
+            },
+            {
+              "kind": "Reference",
+              "text": "PartialConfig"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "PartialConfig",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "config",
+              "docComment": "/**\n * The unresolved configuration options for the parsed config file.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Reference",
+                  "text": "config"
+                },
+                {
+                  "kind": "Content",
+                  "text": ": "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "TsconfigOptions"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "config",
+              "propertyTypeTokenRange": {
+                "startIndex": 2,
+                "endIndex": 3
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "fileName",
+              "docComment": "/**\n * The file name of the discovered config file.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Reference",
+                  "text": "fileName"
+                },
+                {
+                  "kind": "Content",
+                  "text": ": "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "fileName",
+              "propertyTypeTokenRange": {
+                "startIndex": 2,
+                "endIndex": 3
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Function",
+          "canonicalReference": "(readTsconfigFile:0)",
+          "docComment": "/**\n * Read a tsconfig.json file and return the JSON as-is without further value resolution.\n *\n * @param fileName - Absolute path to the tsconfig.json file to read.\n *\n * @returns Partial config object.\n *\n * @example\n * ```typescript\n * const config = readTsconfigFile(PATH_TO_YOUR_TSCONFIG)\n * ```\n *\n * @public\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export declare function "
+            },
+            {
+              "kind": "Reference",
+              "text": "readTsconfigFile"
+            },
+            {
+              "kind": "Content",
+              "text": "("
+            },
+            {
+              "kind": "Reference",
+              "text": "fileName"
+            },
+            {
+              "kind": "Content",
+              "text": ": "
+            },
+            {
+              "kind": "Content",
+              "text": "string"
+            },
+            {
+              "kind": "Content",
+              "text": "): "
+            },
+            {
+              "kind": "Reference",
+              "text": "TsconfigOptions"
+            },
+            {
+              "kind": "Content",
+              "text": ";"
+            }
+          ],
+          "returnTypeTokenRange": {
+            "startIndex": 7,
+            "endIndex": 8
+          },
+          "releaseTag": "Public",
+          "overloadIndex": 0,
+          "parameters": [
+            {
+              "parameterName": "fileName",
+              "parameterTypeTokenRange": {
+                "startIndex": 5,
+                "endIndex": 6
+              }
+            }
+          ],
+          "name": "readTsconfigFile"
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "(ResolvedTsconfig:interface)",
+          "docComment": "/**\n * Resolved tsconfig.json file name and compiler config values.\n *\n * @public\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface "
+            },
+            {
+              "kind": "Reference",
+              "text": "ResolvedTsconfig"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "ResolvedTsconfig",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "config",
+              "docComment": "/**\n * The fully resolved TypeScript compiler options.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Reference",
+                  "text": "config"
+                },
+                {
+                  "kind": "Content",
+                  "text": ": "
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ts"
+                },
+                {
+                  "kind": "Content",
+                  "text": "."
+                },
+                {
+                  "kind": "Reference",
+                  "text": "ParsedCommandLine"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "config",
+              "propertyTypeTokenRange": {
+                "startIndex": 2,
+                "endIndex": 5
+              }
+            },
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "fileName",
+              "docComment": "/**\n * Absolute path to the resolved `tsconfig.json` file.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Reference",
+                  "text": "fileName"
+                },
+                {
+                  "kind": "Content",
+                  "text": ": "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "fileName",
+              "propertyTypeTokenRange": {
+                "startIndex": 2,
+                "endIndex": 3
+              }
+            }
+          ],
+          "extendsTokenRanges": []
+        },
+        {
+          "kind": "Interface",
+          "canonicalReference": "(TsconfigOptions:interface)",
+          "docComment": "/**\n * Options found in a tsconfig.json file.\n *\n * @public\n */\n",
+          "excerptTokens": [
+            {
+              "kind": "Content",
+              "text": "export interface "
+            },
+            {
+              "kind": "Reference",
+              "text": "TsconfigOptions"
+            },
+            {
+              "kind": "Content",
+              "text": " extends "
+            },
+            {
+              "kind": "Reference",
+              "text": "ts"
+            },
+            {
+              "kind": "Content",
+              "text": "."
+            },
+            {
+              "kind": "Reference",
+              "text": "CompilerOptions"
+            },
+            {
+              "kind": "Content",
+              "text": " "
+            }
+          ],
+          "releaseTag": "Public",
+          "name": "TsconfigOptions",
+          "members": [
+            {
+              "kind": "PropertySignature",
+              "canonicalReference": "extends",
+              "docComment": "/**\n * The module path to another tsconfig configuration file.\n */\n",
+              "excerptTokens": [
+                {
+                  "kind": "Reference",
+                  "text": "extends"
+                },
+                {
+                  "kind": "Content",
+                  "text": "?: "
+                },
+                {
+                  "kind": "Content",
+                  "text": "string"
+                },
+                {
+                  "kind": "Content",
+                  "text": ";"
+                }
+              ],
+              "releaseTag": "Public",
+              "name": "extends",
+              "propertyTypeTokenRange": {
+                "startIndex": 2,
+                "endIndex": 3
+              }
+            }
+          ],
+          "extendsTokenRanges": [
+            {
+              "startIndex": 3,
+              "endIndex": 7
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

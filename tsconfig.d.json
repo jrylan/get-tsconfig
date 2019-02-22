@@ -1,0 +1,7 @@
+{
+  "extends": "tsconfig-slick/declaration",
+  "compilerOptions": {
+    "types": ["jest", "node"]
+  },
+  "exclude": ["**/__fixtures__/**", "**/__tests__/**"]
+}
