@@ -54,7 +54,7 @@
     "jest": "24.4.0",
     "jest-serializer-path": "0.1.15",
     "prettier": "1.16.4",
-    "semantic-release": "15.13.4",
+    "semantic-release": "15.13.7",
     "tsconfig-slick": "3.0.2",
     "tslint": "5.13.1",
     "tslint-slick": "5.0.0",
